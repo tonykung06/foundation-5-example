@@ -1,0 +1,71 @@
+header {
+	background-color: #f4f4f4;
+	padding: 1em 0 .5em 0;
+}
+
+div.logo {
+	height: 68px;
+	width: 104px;
+	background-repeat: no-repeat;
+	margin-top: .5em;
+	float: left;
+}
+
+header a.tel {
+	font-size: 1.3em;
+	display: block;
+	float: right;
+	margin-right: 1%;
+	color: #c53831 !important;
+	text-decoration: none;
+	text-align: right;
+	z-index: 999;
+}
+
+header ul.social {
+	margin: .5em 0 0 0;
+	float: right;
+	clear: right;
+}
+
+header ul.social li {
+	float: left;
+	list-style-type: none;
+}
+
+header ul.social li a {
+	display: block;
+}
+
+header ul.social li [class^="icon-"], header ul.social li [class*=" icon-"] {
+	font-size: 2.4em;
+}
+
+/* tablet rules */
+@media only screen and (min-width: 40.0625em) {
+	div.logo {
+		height: 102px;
+		width: 157px;
+		margin-top: 1em;
+	}
+
+	header a.tel {
+		font-size: 1.6em;
+	}
+
+	header ul.social li [class^="icon-"], header ul.social li [class*=" icon-"] {
+		font-size: 3.1em;
+	}
+
+	header ul.social {
+		margin-top: 1em;
+	}
+}
+
+/* desktop rules */
+@media only screen and (min-width: 64.0625em) {
+	div.logo {
+		height: 135px;
+		width: 207px;
+	}
+}
