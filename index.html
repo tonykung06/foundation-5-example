@@ -55,9 +55,53 @@
       </div>
     </header>
 
+    <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>MENU</span>
+            </a>
+          </li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left">
+            <li class="active"><a href="index.html">About</a></li>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+              <a href="design.html">Design Principles</a>
+              <ul class="dropdown">
+                <li><a href="wayfinding.html">Wayfinding</a></li>
+                <li><a href="alignment.html">Alignment</a></li>
+                <li><a href="effect.html">Aesthetic-Usability Effect</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li><a href="submit.html">Submission</a></li>
+            <li class="divider"></li>
+          </ul>
+          <ul class="right">
+            <li class="has-form">
+              <form action="localsearch.php" method="get" enctype="multipart/form-data">
+                <div class="row collapse">
+                  <div class="small-9 column">
+                    <input type="text" name="search" placeholder="search..." />
+                  </div>
+                  <div class="small-3 column">
+                    <input type="submit" class="button expand alert" value="GO">
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
     <div class="row">
       <div class="column small-12"><!-- foundation assuming medium-12 and large-12, which follow small-12 -->
-        <h1>Page Title</h1>
+        <h1>About Us</h1>
       </div>
     </div>
 
