@@ -16,7 +16,7 @@ header a.tel {
 	display: block;
 	float: right;
 	margin-right: 1%;
-	color: #c53831 !important;
+	color: green !important;
 	text-decoration: none;
 	text-align: right;
 	z-index: 999;
@@ -39,6 +39,10 @@ header ul.social li a {
 
 header ul.social li [class^="icon-"], header ul.social li [class*=" icon-"] {
 	font-size: 2.4em;
+}
+
+.row h1 {
+	color: green;
 }
 
 /* tablet rules */
