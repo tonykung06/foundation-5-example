@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation | Welcome</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:300,600' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+    <link rel="stylesheet" href="css/font-icons.css" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/override.css" />
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="row">
+        <div class="large-12 columns">
+          <div class="logo" data-interchange="[images/logoS.png, (default)], [images/logoM.png, (medium)], [images/logoL.png, (large)]"></div>
+          <a href="tel:(801) 375-2228" class="tel" tabindex="-1">(800) 555-1212</a>
+          <ul class="social">
+            <li class="twitter">
+              <a href="http://twitter.com">
+                <span class="icon-twitter" />
+                <span class="hide">
+                  twitter
+                </span>
+              </a>
+            </li>
+            <li class="facebook">
+              <a href="http://facebook.com">
+                <span class="icon-facebook" />              
+                <span class="hide">
+                  facebook
+                </span>
+              </a>
+            </li>
+            <li class="plus">
+              <a href="http://plus.google.com">
+                <span class="icon-google" />
+                <span class="hide">
+                  google plus
+                </span>
+              </a>
+            </li>
+            <li class="youtube">
+              <a href="http://www.youtube.com">
+                <span class="icon-youtube" />
+                <span class="hide">
+                  youtube
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="contain-to-grid sticky">
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name"></li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#">
+              <span>MENU</span>
+            </a>
+          </li>
+        </ul>
+        <section class="top-bar-section">
+          <ul class="left">
+            <li><a href="index.html">About</a></li>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+              <a href="design.html">Design Principles</a>
+              <ul class="dropdown">
+                <li><a href="wayfinding.html">Wayfinding</a></li>
+                <li><a href="alignment.html">Alignment</a></li>
+                <li><a href="effect.html">Aesthetic-Usability Effect</a></li>
+              </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="active"><a href="submit.html">Submission</a></li>
+            <li class="divider"></li>
+          </ul>
+          <ul class="right">
+            <li class="has-form">
+              <form action="localsearch.php" method="get" enctype="multipart/form-data">
+                <div class="row collapse">
+                  <div class="small-9 column">
+                    <input type="text" name="search" placeholder="search..." />
+                  </div>
+                  <div class="small-3 column">
+                    <input type="submit" class="button expand alert" value="GO">
+                  </div>
+                </div>
+              </form>
+            </li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <!-- foundation assuming medium-12 and large-12, which follow small-12 -->
+    <div class="row">
+      <div class="column small-12">
+        <h1>Gallery Submission</h1>
+      </div>
+    </div>
+
+    <form data-abide action="FormToEmail.php" method="POST" enctype="multipart/form-data">
+      <div class="row">
+        <fieldset>
+          <legend>Designer Information</legend>
+          <div class="small-12 column medium-9">
+            <div>
+              <label>First <small>required</small>
+              <input required type="text" name="first_name" placeholder="First Name"></label>
+              <small class="error">First name is require</small>
+            </div>
+
+            <div>
+              <label>Last <small>required</small>
+              <input required type="text" name="last_name" placeholder="First Name"></label>
+              <small class="error">Last name is require</small>
+            </div>
+
+            <label>Email
+              <input required type="email" name="email" placeholder="Email address">
+            </label>
+
+            <label>Cell Phone
+              <input required type="text" name="phone" placeholder="Cell Phone">
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+
+
+      <div class="row">
+        <fieldset>
+          <legend>Web Site</legend>
+          <div class="small-12 column medium-9">
+            <div>
+              <label>Web Site URL <small>required</small>
+              <input required type="text" name="url" placeholder="http://"></label>
+              <small class="error">URL required.</small>
+            </div>
+            <label>
+              <input type="checkbox" name="alignment1"> Alignment 1
+            </label>
+              <label>
+                
+              <input type="checkbox" name="alignment2"> Alignment 2
+              </label>
+            <label>
+              <input type="checkbox" name="alignment3"> Alignment 3
+            </label>
+
+        </fieldset>
+        </div>
+            <div class="row">
+              <div class="column small-6 medium-3">
+                <input class="button expand success round" type="submit" value="Send my Entry">
+              </div>
+              <div class="column small-6 medium-9">
+                <a class="button radius" href="index.html">Cancel</a>
+              </div>
+            </div>
+
+            <input type="hidden" name="subject" value="submission from Foundation site"><input type="hidden" name="redirect" value="thanks.html">
+      </div>
+    </form>
+
+ 
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
